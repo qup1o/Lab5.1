@@ -14,10 +14,10 @@ int main()
 
     double fx = f(x);
 
-    double numerator = fx + f(1 + fx);
-    double denominator = 1 + f(1 + f(x) * f(x)) * f(1 + f(x) * f(x));
+    double d = fx + f(1 + fx);
+    double b = 1 + f(1 + f(x) * f(x)) * f(1 + f(x) * f(x));
 
-    double c = numerator / denominator;
+    double c = d / b;
 
     cout << "c = " << c << endl;
 
